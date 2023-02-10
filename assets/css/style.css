@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto';
+    background: linear-gradient(90deg, rgb(4, 1, 14)0%, rgb(136, 25, 180)50%);
+    background-image: url("../Images/pexels-anna-tarazevich-6501751.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+
+    }
+
+    .inner-row {
+        height: 100vh;
+    }
+    .primaryBg{
+        background: rgba(31, 29, 29, 0.356);
+    }
+
+    .primaryColor{
+        color: rgba(0, 0, 0, 0.267);
+    }
+    .form-box{
+        background:#fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    .registration-form{
+        display: none;
+    }
