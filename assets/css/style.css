@@ -5,23 +5,36 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no repeat;
+    }
 
+    .form-box{
+        border-radius: 30px;
     }
 
     .inner-row {
         height: 100vh;
     }
+
     .primaryBg{
         background: rgba(31, 29, 29, 0.356);
+        box-shadow: inset 0 0 0 0;
+        transition: ease-out 0.5s;
+        outline:none;
+    }
+
+    .primaryBg:hover{
+        box-shadow: inset 100px 0 0 0 black;
     }
 
     .primaryColor{
         color: rgba(0, 0, 0, 0.267);
     }
+
     .form-box{
         background:#fff;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     }
+
     .registration-form{
         display: none;
     }
