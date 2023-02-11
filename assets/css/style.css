@@ -4,7 +4,6 @@ body {
     background-image: url("../Images/pexels-anna-tarazevich-6501751.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no repeat;
     }
 
     .form-box{
@@ -19,7 +18,7 @@ body {
         background: rgba(31, 29, 29, 0.356);
         box-shadow: inset 0 0 0 0;
         transition: ease-out 0.5s;
-        outline:none;
+        outline: none;
     }
 
     .primaryBg:hover{

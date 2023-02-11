@@ -10,69 +10,141 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
 </head>
+
 <body>
-    
     <div class="container">
         <div class="row justify-content-center align-items-center inner-row">
+            <!--NJ paste your code for the nav bar here-->
+            <!-- paste jumbotron code here-->
             <div class="col-lg-5 col-md-7">
                 <div class="form-box login-form p-md-5 p-3">
                     <div class="form title">
                         <h2 class="fw-bold mb-3">Login</h2>
                     </div>
-                    <form actions="">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control form-control-sm" placeholder="Email">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control form-control-sm" placeholder="Password">
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
                         </div>
-                        <div class="mt-3">
-                            <button class="btn primaryBg text-white">Login</button>
-                        </div>
+                        <button type="submit" class="btn primaryBg text-white">Login</button>
                     </form>
-                    <div class="mt-3">
-                        <span>Dont have account?</span> <button class="p-0 border-0 bg-transparent primaryColor signup-show">Sign Up</button>
-                    </div>
+                        <div class="mt-3">
+                            <span>Dont have account?</span> <button class="p-0 border-0 bg-transparent primaryColor signup-show">Sign Up</button>
+                        </div>
                 </div>
 
                 <div class="form-box registration-form p-md-5 p-3">
                     <div class="form title">
                         <h2 class="fw-bold mb-3">Create Your Account</h2>
                     </div>
-                    <form actions="">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control form-control-sm" placeholder="First Name">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="First Name">
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control form-control-sm" placeholder="Last Name">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Last Name">
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control form-control-sm" placeholder="Email">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email-2" aria-describedby="emailHelp" placeholder="Email">
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control form-control-sm" placeholder="Password">
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password-2" placeholder="Password">
                         </div>
-                        <div class="mt-3">
-                            <button class="btn primaryBg text-white">Sign Up</button>
-                        </div>
+                        <button type="submit" class="btn primaryBg text-white">Sign Up</button>
                     </form>
-                    <div class="mt-3">
+                        <div class="mt-3">
                         <span>Already have account?</span> <button class="p-0 border-0 bg-transparent primaryColor login-show">Login</button>
-                    </div>
-                </div>
-
-                <div class="form-box login-form p-md-5 p-3">
-                    <div class="Video title">
-                        <h2 class="fw-bold mb-3">Videos</h2>
-                    </div>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
+        <!--Marta please paste code here and see how it works out: quiz, then images, then videos then facts in seperate divs-->
     </div>
 
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/Images/pexels-spacex-586030.jpg" width="500" height="700" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Lets Explore together!</h5>
+                <p>Are you ready to take off to space</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Images/pexels-zch-14618855.jpg" width="50" height="700" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Quiz</h5>
+                <p>Test your Space knowledge by taking a quick quiz on the go</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/Images/pexels-pixabay-41162 (2).jpg" width="20" height="700" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Learn something new everyday</h5>
+                <p>Daily images, videos and much more!</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card bg- text-black" style="margin-top: 100px; background-color:white;";>
+        <img src="./assets/Images/pexels-leeloo-thefirst-5428836.jpg" width="50" height="400" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title" style="margin-top: 250px">Quiz</h5>
+          <p class="card-text">Test you space knowledge with this quiz</p>
+          <a href="#" class="btn btn-primary">Start quiz</a>
+        </div>
+      </div>
+
+      <div class="card-deck" style="margin-bottom:30px; margin-top:50px">
+        <div class="card">
+          <img src="./assets/Images/pexels-pixabay-39561.jpg"width="50" height="300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Images</h5>
+            <p class="card-text">Daily images</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/Images/pexels-pixabay-73910.jpg" width="50" height="300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Videos</h5>
+            <p class="card-text">NASA videos</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/Images/pexels-mikhail-nilov-7671958.jpg" width="50" height="300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Facts</h5>
+            <p class="card-text">Daily facts</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 
@@ -80,4 +152,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-</html>
