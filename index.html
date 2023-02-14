@@ -76,7 +76,7 @@
             <div class="carousel-item active">
               <img src="./assets/Images/pexels-spacex-586030.jpg" width="500" height="700" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Lets Explore together!</h5>
+                <h5>Let's Explore together!</h5>
                 <p>Are you ready to take off to space</p>
               </div>
             </div>
@@ -143,6 +143,47 @@
       </div>
 
 
+      <!-- QUIZ -->
+      <div class="quiz hide">
+        <div class="scores"><a href="highscores.html">View Highscores</a></div>
+
+        <div class="timer">Time: <span id="time">0</span></div>
+
+        <div class="wrapper">
+          <div id="start-screen" class="start">
+            <h1>Cosmos Quiz Challenge</h1>
+            <p>
+              Try to answer the following code-related questions within the time
+              limit. Keep in mind that incorrect answers will penalize your
+              score/time by ten seconds!
+            </p>
+            <button id="start">Start Quiz</button>
+          </div>
+
+          <div id="questions-ctn" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="answer-buttons" class="answers">
+              <button class="button">Ans1</button>
+              <button class="button">Ans2</button>
+              <button class="button">Ans3</button>
+              <button class="button">Ans4</button>
+              </div>
+          </div>
+
+          <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is: <span id="final-score"></span>.</p>
+            <p>
+              Enter initials: <input type="text" id="initials" max="3" />
+              <button id="submit">Submit</button>
+            </p>
+          </div>
+          <div id="feedback" class="feedback hide"></div>
+        </div>
+      </div>
+
+
+
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -152,4 +193,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/quiz.js"></script>
+  </body>
 </body>
