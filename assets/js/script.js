@@ -9,6 +9,28 @@ $('.login-show').click(function(){
     $('.registration-form').hide();
 });
 
+//jQuery effects - hide and show app content details//
+$('#login-btn').click(function(){
+  $('.login-form').hide();
+  $('.nav').show();
+  $('.jumbotron').show();
+  $('.text-black').show();
+  $('.card-deck').show();
+})
+
+//jQuery effects - hide and show quiz//
+$('#btn-quiz').click(function(){
+  $('.quiz').show();
+  $('.text-black').hide();
+  $('.card-deck').hide();
+})
+
+$('#submit').click(function(){
+  $('.quiz').hide();
+  $('.text-black').show();
+  $('.card-deck').show();
+})
+
 //HTML elements selected//
 var firstNameInput = document.querySelector("#firstName");
 var lastNameInput = document.querySelector("#lastName");
