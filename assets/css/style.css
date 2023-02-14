@@ -1,11 +1,12 @@
 body {
     font-family: 'Roboto';
     background: linear-gradient(90deg, rgb(4, 1, 14)0%, rgb(136, 25, 180)50%);
-    background-image: url("../Images/pexels-anna-tarazevich-6501751.jpg");
+    background-image: url("../Images/pexels-frank-cone-3214110.jpg");
     background-size: cover;
     background-position: center;
     }
-
+    
+/*login and registration form design*/
     .form-box{
         border-radius: 30px;
     }
@@ -14,6 +15,7 @@ body {
         height: 100vh;
     }
 
+/*button animation*/
     .primaryBg{
         background: rgba(31, 29, 29, 0.356);
         box-shadow: inset 0 0 0 0;
@@ -38,6 +40,7 @@ body {
         display: none;
     }
 
+<<<<<<< HEAD
 
     /* QUIZ STYLING */
         body {
@@ -132,3 +135,66 @@ body {
             top: 10px;
             right: 10px;
         }
+=======
+    .bd-example{
+        margin: 0px 5px 150px 5px;
+    }
+
+    .carousel-inner{
+        border-radius: 20px;
+    }
+
+    .carousel-item img{
+        width: 700px;
+    }
+
+    .carousel-item p{
+        font-size:larger
+
+    }
+
+    .text-black{
+        margin: 0px 15px 20px 15px;
+        background-color: black;
+    }
+
+    .card-deck{
+        margin: 0px 0px 30px 0px;
+    }
+
+    .card{
+        background-color: rgba(128, 128, 128, 0.068);
+        color: white;
+    }
+
+    .card-title{
+        font-weight: 800;
+    }
+
+/*button animation*/
+    .btn-primary{
+        background: black;
+        box-shadow: inset 0 0 0 0;
+        transition: ease-out 0.5s;
+        outline: none;
+    }
+
+    .btn-primary:hover{
+        box-shadow: inset 100px 0 0 0 black;
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid white;
+        margin: 100px 50px 0px 50px;
+        color: white;
+    }
+
+    .copyright{
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        width: 100%;
+    }
+>>>>>>> f46e4d6a96939a0991e0ca0605096690adc1fae6
