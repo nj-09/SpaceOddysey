@@ -40,7 +40,6 @@ body {
         display: none;
     }
 
-
     /* QUIZ STYLING */
         body {
             font-family: Arial;
@@ -134,6 +133,7 @@ body {
             top: 10px;
             right: 10px;
         }
+
     .bd-example{
         margin: 0px 5px 150px 5px;
     }
@@ -195,3 +195,4 @@ body {
         padding: 20px 0px 20px 0px;
         width: 100%;
     }
+
