@@ -1,3 +1,4 @@
+//jQuery effects - hide and show added to login and registration forms//
 $('.signup-show').click(function(){
     $('.registration-form').show();
     $('.login-form').hide();
@@ -8,6 +9,7 @@ $('.login-show').click(function(){
     $('.registration-form').hide();
 });
 
+//HTML elements selected//
 var firstNameInput = document.querySelector("#firstName");
 var lastNameInput = document.querySelector("#lastName");
 var emailInput = document.querySelector("#email-2");
@@ -20,12 +22,13 @@ var loginButton = document.querySelector("#login-btn");
 var userEmail = document.querySelector("#email").value;
 var userPassword = document.querySelector("#password").value;
 
+//displayMessage added for incorrect user registration input//
 function displayMessage(type, message) {
     msgDiv.textContent = message;
     msgDiv.setAttribute("class", type);
   }
 
-
+//user input saved to localStorage//
 signUpButton.addEventListener("click", function(event) {
     event.preventDefault();
     
@@ -56,6 +59,7 @@ signUpButton.addEventListener("click", function(event) {
 
 });
 
+//User able to login using saved registration details//
 loginButton.addEventListener("click", function(event) {
 event.preventDefault();
 
@@ -73,6 +77,5 @@ var userPassword = document.getElementById("password").value;
   document.getElementById("deck1").style.display = "flex";
 } else {
   alert("Incorrect email or password. Please try again.");
-
 }
   });
