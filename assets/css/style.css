@@ -6,6 +6,29 @@ body {
     background-position: center;
     }
     
+/*Homepage CSS*/
+
+/*Bootstrap Nav bar final draft*/
+.navbar-expand-lg .navbar-collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/*Space Odyssey Heading*/
+#UOHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.text-center {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /*login and registration form design*/
     .form-box{
         border-radius: 30px;
