@@ -9,6 +9,15 @@ $('.login-show').click(function(){
     $('.registration-form').hide();
 });
 
+//jQuery effects - hide and show app content details//
+$('#login-btn').click(function(){
+  $('.login-form').hide();
+  $('.nav').show();
+  $('.jumbotron').show();
+  $('.text-black').show();
+  $('.card-deck').show();
+})
+
 //jQuery effects - hide and show quiz//
 $('#btn-quiz').click(function(){
   $('.quiz').show();

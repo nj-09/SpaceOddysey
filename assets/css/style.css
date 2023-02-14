@@ -2,33 +2,38 @@ body {
     font-family: 'Roboto';
     background: linear-gradient(90deg, rgb(4, 1, 14)0%, rgb(136, 25, 180)50%);
     background-image: url("../Images/pexels-frank-cone-3214110.jpg");
-    background-size:;
     background-position: center;
-    background-repeat: ;
     }
-    
-/*Homepage CSS*/
 
-/*Bootstrap Nav bar final draft*/
-.navbar-expand-lg .navbar-collapse{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+    /*Nav bar moved to the right*/
+    .nav{
+        float: right;
+        margin-right: 100px;
+    }
+
+    /*hover effect added to nav bar links*/
+.nav-link{
+    transition: all 0.5s ease-in-out;
+    color: white;
 }
 
-/*Space Odyssey Heading*/
-#UOHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:'Courier New', Courier, monospace;
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0);
+}
+.jumbotron h1{
+    margin-top: 200px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:white;
 }
 
-.text-center {
-    font-size: x-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.jumbotron p{
+    margin-left: 420px;
+    margin-top: 20px;
+    color:white;
 }
+
 
 /*login and registration form design*/
     .form-box{
@@ -135,13 +140,17 @@ body {
         
     .start {
         text-align: center;
+        color: white;
         }
+
         
     .scores {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+        margin: 0px 0px 5px 10px;
         }
+
+    .scores a{
+        color: white;
+    }
         
     .feedback {
         font-style: italic;
@@ -153,9 +162,9 @@ body {
         }
         
     .timer {
-        position: absolute;
-        top: 10px;
+        margin: 0px 0px 0px 10px;
         right: 10px;
+        color:white;
         }
 
     .bd-example{
