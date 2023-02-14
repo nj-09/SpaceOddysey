@@ -133,6 +133,10 @@ body {
         margin: 100px auto 0 auto;
         max-width: 600px;
         }
+
+    #subtitle{
+        color:white;
+    }
         
     .hide {
         display: none;
@@ -143,7 +147,6 @@ body {
         color: white;
         }
 
-        
     .scores {
         margin: 0px 0px 5px 10px;
         }
@@ -166,6 +169,14 @@ body {
         right: 10px;
         color:white;
         }
+
+    #question-title{
+        color:white;
+    }
+
+    #end-screen{
+        color:white;
+    }
 
     .bd-example{
         margin: 0px 5px 150px 5px;
