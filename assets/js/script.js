@@ -16,7 +16,7 @@ $('#display-image').on('click', function (event) {
       const date = $('<h2>').append(response.date)
       const explanation = $('<p>').append(response.explanation)
       
-      $('#homepage').append(image, date, explanation)
+      $('#image-of-the-day').append(image, date, explanation)
   })
 })
 
