@@ -238,6 +238,17 @@ body {
         margin: 0px 0px 0px 5px;
     }
 
+/*videos styles*/
+#nasa-video{
+    color: white;
+    margin: 0px 0px 0px 50px;
+}
+
+#nasa-video h2{
+    font-weight:bolder;
+    font-size:xx-large;
+}
+
     .footer{
         display: flex;
         align-items: center;
