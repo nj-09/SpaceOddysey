@@ -1,3 +1,25 @@
+// API-image-of-the-day
+$('#display-image').on('click', function (event) {
+  event.preventDefault();
+
+  const APIkey = "Tx4PO85BITHWuJbaJLa8RIsdAxPLDPf7LdPV9kaj";
+  let queryURL = `https://api.nasa.gov/planetary/apod?api_key=${APIkey}`
+
+
+  $.ajax({
+      url: queryURL,
+      method: "GET"
+  }).then(function (response) {
+      console.log(response)
+
+      const image = $('<img>').addClass('api-image-day').attr('src', response.url);
+      const date = $('<h2>').addClass('api-title-day').append(response.date)
+      const explanation = $('<p>').addClass('api-explanation-day').append(response.explanation)
+      
+      $('#image-of-the-day').append(image, date, explanation)
+  })
+})
+
 //jQuery effects - hide and show added to login and registration forms//
 $('.signup-show').click(function(){
     $('.registration-form').show();
@@ -103,4 +125,23 @@ var userPassword = document.getElementById("password").value;
   });
 
 
+
+
+// $('#image-gallery').on('click', function (event) {
+//   event.preventDefault();
+
+//   const nasa_id = "PIA18033"
+//   let queryURL = `https://images-api.nasa.gov/asset/${nasa_id}`
+
+
+//   $.ajax({
+//       url: queryURL,
+//       method: "GET"
+//   }).then(function (response) {
+//       console.log(response)
+
+//       const image = $('<img>').attr('src', response.collection.items[3].href);
+//       $('#display-photo').append(image)
+//   })
+// })
 
