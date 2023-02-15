@@ -12,9 +12,9 @@ $('#display-image').on('click', function (event) {
   }).then(function (response) {
       console.log(response)
 
-      const image = $('<img>').attr('src', response.url);
-      const date = $('<h2>').append(response.date)
-      const explanation = $('<p>').append(response.explanation)
+      const image = $('<img>').addClass('api-image-day').attr('src', response.url);
+      const date = $('<h2>').addClass('api-title-day').append(response.date)
+      const explanation = $('<p>').addClass('api-explanation-day').append(response.explanation)
       
       $('#image-of-the-day').append(image, date, explanation)
   })
