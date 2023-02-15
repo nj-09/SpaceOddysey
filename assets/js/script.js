@@ -3,7 +3,7 @@
 $('.signup-show').click(function(){
   $('.registration-form').show();
   $('.login-form').hide();
-})
+});
 
 $('.login-show').click(function(){
   $('.login-form').show();
@@ -17,29 +17,39 @@ $('#login-btn').click(function(){
   $('.jumbotron').show();
   $('.text-black').show();
   $('.card-deck').show();
-})
+});
 
 //jQuery effects - hide and show quiz//
 $('#btn-quiz').click(function(){
   $('.quiz').show();
   $('.text-black').hide();
   $('.card-deck').hide();
-})
+});
 
 $('#submit').click(function(){
   $('.quiz').hide();
   $('.text-black').show();
   $('.card-deck').show();
-})
+});
 
-//jQuery effects - hide and show image-of-the-day
+//jQuery effects - hide and show image-of-the-day//
 $('#display-image').click(function(){
-  $('.image-of-the-day').show();
+  $('#image-of-the-day').show();
+  $('#img-title').show();
   $('.text-black').hide();
   $('#img-card').hide();
   $('#videos').hide();
   $('#facts').hide();
-})
+});
+
+//jQuery effects - hide and show fact-of-the-day//
+$('#display-facts').click(function(){
+  $('#image-facts').show();
+  $('.text-black').hide();
+  $('#img-card').hide();
+  $('#videos').hide();
+  $('#facts').hide();
+});
 
 //HTML elements selected//
 var firstNameInput = document.querySelector("#firstName");

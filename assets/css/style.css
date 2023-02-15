@@ -213,6 +213,21 @@ body {
         margin: 0px 0px 0px 5px;
     }
 
+    #img-title{
+        position: relative;
+        bottom: 960px;
+        color: white;
+        margin: 0px 0px 0px 10px;
+        font-weight: bolder;
+        font-size:xx-large;
+    }
+
+/*fact-of-the-day styles*/
+    #image-facts{
+        color: white;
+        margin: 0px 0px 0px 5px;
+    }
+
     .footer{
         display: flex;
         align-items: center;
