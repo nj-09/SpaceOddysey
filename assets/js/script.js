@@ -53,6 +53,15 @@ $('#submit').click(function(){
   $('.card-deck').show();
 })
 
+//jQuery effects - hide and show image-of-the-day
+$('#display-image').click(function(){
+  $('.image-of-the-day').show();
+  $('.text-black').hide();
+  $('#img-card').hide();
+  $('#videos').hide();
+  $('#facts').hide();
+})
+
 //HTML elements selected//
 var firstNameInput = document.querySelector("#firstName");
 var lastNameInput = document.querySelector("#lastName");
