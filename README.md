@@ -4,6 +4,7 @@
 
 ## Description:
 SpaceOddysey is a simple and interactive app designed for space enthusiasts that want to discover more about space in a fun and engaging way, while avoiding information overload. The app contains various features including quizzes, images, videos and more!
+Link to Deployed Application: https://nj-09.github.io/SpaceOddysey/
 
 ## Lessons learnt from this project:
 - Use jQuery effects such as .hide and .show to hide and show elements as required
