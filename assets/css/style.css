@@ -221,11 +221,33 @@ body {
         font-size:xx-large;
     }
 
+/*video styles*/
+#nasa-video{
+    color: white;
+    margin: 0px 0px 0px 20px;
+}
+
+#nasa-video h2{
+    font-size:xx-large;
+    font-weight:bolder;
+}
+
 /*fact-of-the-day styles*/
     #image-facts{
         color: white;
         margin: 0px 0px 0px 5px;
     }
+
+/*videos styles*/
+#nasa-video{
+    color: white;
+    margin: 0px 0px 0px 50px;
+}
+
+#nasa-video h2{
+    font-weight:bolder;
+    font-size:xx-large;
+}
 
     .footer{
         display: flex;
