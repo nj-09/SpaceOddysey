@@ -235,7 +235,7 @@ function displayFacts6() {
 }
 
 
-$('#image').on('click', function (event) {
+$('#display-facts').on('click', function (event) {
     event.preventDefault();
   
     displayFacts1();
