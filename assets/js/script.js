@@ -42,6 +42,15 @@ $('#display-image').click(function(){
   $('#facts').hide();
 });
 
+//jQuery effects - hide and show videos//
+$('#vids').click(function(){
+  $('#nasa-video').show();
+  $('.text-black').hide();
+  $('#img-card').hide();
+  $('#videos').hide();
+  $('#facts').hide();
+});
+
 //jQuery effects - hide and show fact-of-the-day//
 $('#display-facts').click(function(){
   $('#image-facts').show();
