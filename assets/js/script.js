@@ -124,10 +124,9 @@ function displayMessage(type, message) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response)
   
-        const image = $('<img>').addClass('api-image-day').attr('src', response.url);
         const date = $('<h2>').addClass('api-title-day').append(response.date)
+        const image = $('<img>').addClass('api-image-day').attr('src', response.url);
         const explanation = $('<p>').addClass('api-explanation-day').append(response.explanation)
         
         $('#image-of-the-day').append(image, date, explanation)
@@ -146,11 +145,10 @@ function displayMessage(type, message) {
         method: "GET"
     }).then(function (response) {
         
-        console.log(response);
+        const data1 = $('<h2>').text('2012-01-30')
         const image1 = $('<img>').attr('src', response.collection.items[3].href);
         const fact1 = $('<p>').text('Behold one of the more detailed images of the Earth yet created. This Blue Marble Earth montage shown above -- created from photographs taken by the Visible/Infrared Imager Radiometer Suite (VIIRS) instrument on board the new Suomi NPP satellite -- shows many stunning details of our home planet. The Suomi NPP satellite was launched last October and renamed last week after Verner Suomi, commonly deemed the father of satellite meteorology. The composite was created from the data collected during four orbits of the robotic satellite taken earlier this month and digitally projected onto the globe. Many features of North America and the Western Hemisphere are particularly visible on a high resolution version of the image.')
-        const data1 = $('<h2>').text('2012-01-30')
-        factsCtn.append(image1,fact1,data1)
+        factsCtn.append(data1, image1, fact1)
     })
 }
 
@@ -163,10 +161,10 @@ function displayFacts2() {
         method: "GET"
     }).then(function (response) {
         
+        const data2 = $('<h2>').text('1965-06-03')
         const image2 = $('<img>').attr('src', response.collection.items[3].href);
         const fact2 = $('<p>').text("Astronaut Edward H. White II, pilot on the Gemini-Titan 4 spaceflight, is shown during his egress from the spacecraft. His face is covered by a shaded visor to protect him from the unfiltered rays of the sun. White became the first American astronaut to walk in space. He remained outside the spacecraft for 21 minutes during the third revolution of the Gemini-4 mission. He wears a specially designed spacesuit for the extravehicular activity (EVA). In his right hand, he carries a Hand-Held Self-Maneuvering Unit (HHSMU) with which he controlled his movements while in space. He was attached to the spacecraft by a 25-feet umbilical line and a 23-feet tether line, both wrapped together with gold tape to form one cord. He wears an emergency oxygen supply chest pack. Astronaut James A. McDivitt is command pilot for the Gemini-4 mission. EDITOR'S NOTE: Astronaut Edward H. White II died in the Apollo/Saturn 204 fire at Cape Kennedy on Jan. 27, 1967")
-        const data2 = $('<h2>').text('1965-06-03')
-        factsCtn.append(image2,fact2,data2)
+        factsCtn.append(data2, image2, fact2)
     })
 }
 
@@ -179,10 +177,10 @@ function displayFacts3() {
       method: "GET"
   }).then(function (response) {
       
+      const data3 = $('<h2>').text('2016-04-06');
       const image3 = $('<img>').attr('src', response.collection.items[3].href);
       const fact3 = $('<p>').text("This computer-simulated image shows a supermassive black hole at the core of a galaxy. The black region in the center represents the black hole’s event horizon, where no light can escape the massive object’s gravitational grip. The black hole’s powerful gravity distorts space around it like a funhouse mirror. Light from background stars is stretched and smeared as the stars skim by the black hole. Credits: NASA, ESA, and D. Coe, J. Anderson, and R. van der Marel (STScI) More info: Astronomers have uncovered a near-record breaking supermassive black hole, weighing 17 billion suns, in an unlikely place: in the center of a galaxy in a sparsely populated area of the universe. The observations, made by NASA’s Hubble Space Telescope and the Gemini Telescope in Hawaii, may indicate that these monster objects may be more common than once thought. Until now, the biggest supermassive black holes – those roughly 10 billion times the mass of our sun – have been found at the cores of very large galaxies in regions of the universe packed with other large galaxies. In fact, the current record holder tips the scale at 21 billion suns and resides in the crowded Coma galaxy cluster that consists of over 1,000 galaxies.")
-      const data3 = $('<h2>').text('2016-04-06');
-      factsCtn.append(image3,fact3,data3);
+      factsCtn.append(data3, image3, fact3);
   })
 }
 
@@ -195,10 +193,10 @@ function displayFacts4() {
       method: "GET"
   }).then(function (response) {
       
+      const data4 = $('<h2>').text('1971-04-20');
       const image4 = $('<img>').attr('src', response.collection.items[3].href);
       const fact4 = $('<p>').text("Astronaut John W. Young, commander of the Apollo 16 lunar landing mission, leaps from the lunar surface as he salutes the United States flag at the Descartes landing site during the first Apollo 16 extravehicular activity (EVA). Astronaut Charles M. Duke Jr., lunar module pilot, took this picture. The Lunar Module (LM) 'Orion' is on the left. The Lunar Roving Vehicle (LRV) is parked beside the LM. The object behind Young (in the shade of the LM) is the Far Ultraviolet Camera/Spectrograph (FUC/S). Stone Mountain dominates the background in this lunar scene. While astronauts Young and Duke descended in the LM to explore the Descartes highlands landing site on the moon, astronaut Thomas K. Mattingly II, command module pilot, remained with the Command and Service Modules (CSM) 'Casper' in lunar orbit.");
-      const data4 = $('<h2>').text('1971-04-20');
-      factsCtn.append(image4,fact4,data4);
+      factsCtn.append(data4, image4, fact4);
   })
 }
 
@@ -211,10 +209,10 @@ function displayFacts5() {
       method: "GET"
   }).then(function (response) {
       
+      const data5 = $('<h2>').text('2015-07-08');
       const image5 = $('<img>').attr('src', response.collection.items[3].href);
       const fact5 = $('<p>').text("Flaring, active regions of our sun are highlighted in this image combining observations from several telescopes. High-energy X-rays from NASA's Nuclear Spectroscopic Telescope Array (NuSTAR) are shown in blue; low-energy X-rays from Japan's Hinode spacecraft are green; and extreme ultraviolet light from NASA's Solar Dynamics Observatory (SDO) is yellow and red. All three telescopes captured their solar images around the same time on April 29, 2015. The NuSTAR image is a mosaic made from combining smaller images. The active regions across the sun's surface contain material heated to several millions of degrees. The blue-white areas showing the NuSTAR data pinpoint the most energetic spots. During the observations, microflares went off, which are smaller versions of the larger flares that also erupt from the sun's surface. The microflares rapidly release energy and heat the material in the active regions. NuSTAR typically stares deeper into the cosmos to observe X-rays from supernovas, black holes and other extreme objects. But it can also look safely at the sun and capture images of its high-energy X-rays with more sensitivity than before. Scientists plan to continue to study the sun with NuSTAR to learn more about microflares, as well as hypothesized nanoflares, which are even smaller. In this image, the NuSTAR data shows X-rays with energies between 2 and 6 kiloelectron volts; the Hinode data, which is from the X-ray Telescope instrument, has energies of 0.2 to 2.4 kiloelectron volts; and the Solar Dynamics Observatory data, taken using the Atmospheric Imaging Assembly instrument, shows extreme ultraviolet light with wavelengths of 171 and 193 Angstroms. Note the green Hinode image frame edge does not extend as far as the SDO ultraviolet image, resulting in the green portion of the image being truncated on the right and left sides.");
-      const data5 = $('<h2>').text('2015-07-08');
-      factsCtn.append(image5,fact5,data5);
+      factsCtn.append(data5, image5, fact5);
   })
 }
 
@@ -227,44 +225,44 @@ function displayFacts6() {
       method: "GET"
   }).then(function (response) {
       
+      const data6 = $('<h2>').text('1969-07-20');
       const image6 = $('<img>').attr('src', response.collection.items[3].href);
       const fact6 = $('<p>').text("This view from the Apollo 11 spacecraft shows the Earth rising above the moon's horizon. The lunar terrain pictured is in the area of Smyth's Sea on the nearside. Coordinates of the center of the terrain are 85 degrees east longitude and 3 degrees north latitude. While astronauts Neil A. Armstrong, commander, and Edwin E. Aldrin Jr., lunar module pilot, descended in the Lunar Module (LM) 'Eagle' to explore the Sea of Tranquility region of the moon, astronaut Michael Collins, command module pilot, remained with the Command and Service Modules (CSM) 'Columbia' in lunar orbit.");
-      const data6 = $('<h2>').text('1969-07-20');
-      factsCtn.append(image6,fact6,data6);
+      factsCtn.append(data6, image6, fact6);
   })
 }
 
   // SpaceX missions
 
 function displayMissions() {
-  let queryURL = `https://api.spacexdata.com/v3/missions`
+  let queryURL = `https://api.spacexdata.com/v3/rockets`
   $.ajax({
       url: queryURL,
       method: "GET"
   }).then(function (response) {
       
-      const spaceXtitle = $('<h2>').text("SpaceX missions:")
+      const spaceXtitle = $('<h2>').text("SpaceX rockets:")
       factsCtn.append(spaceXtitle);
 
       for (let i = 0; i < response.length; i++) {
-          const mission = $('<h3>').append(response[i].mission_name)
-          const description = $('<p>').append(response[i].description)
-          factsCtn.append(mission, description)
+          const rocket = $('<h2>').append(response[i].rocket_name)
+          const image = $('<img>').attr('src', response[i].flickr_images[0])
+          const description = $('<p>').append(response[i].description);
+          factsCtn.append(rocket, image, description)
       }
   })
 }
 
 $('#display-facts').on('click', function (event) {
     event.preventDefault();
+    const nasaTitle = $('<h3>').text("NASA interesting facts and related image:")
+    factsCtn.append(nasaTitle);
     displayFacts1();
     displayFacts2();
     displayFacts3();
     displayFacts4();
     displayFacts5();
     displayFacts6();
-    
-    const nasaTitle = $('<h3>').text("NASA interesting facts and related image:")
-    factsCtn.append(nasaTitle);
     displayMissions();
   })
   
