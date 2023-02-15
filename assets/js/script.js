@@ -102,5 +102,26 @@ var userPassword = document.getElementById("password").value;
 }
   });
 
+// API-image-of-the-day
+$('#display-image').on('click', function (event) {
+  event.preventDefault();
+
+  const APIkey = "Tx4PO85BITHWuJbaJLa8RIsdAxPLDPf7LdPV9kaj";
+  let queryURL = `https://api.nasa.gov/planetary/apod?api_key=${APIkey}`
+
+
+  $.ajax({
+      url: queryURL,
+      method: "GET"
+  }).then(function (response) {
+      console.log(response)
+
+      const image = $('<img>').attr('src', response.url);
+      const date = $('<h2>').addClass('image-date').append(response.date)
+      const explanation = $('<p>').addClass('image-explanation').append(response.explanation)
+      
+      $('#image-of-the-day').append(image, date, explanation)
+  })
+})
 
 
