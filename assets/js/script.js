@@ -3,7 +3,7 @@
 $('.signup-show').click(function(){
   $('.registration-form').show();
   $('.login-form').hide();
-})
+});
 
 $('.login-show').click(function(){
   $('.login-form').show();
@@ -17,29 +17,39 @@ $('#login-btn').click(function(){
   $('.jumbotron').show();
   $('.text-black').show();
   $('.card-deck').show();
-})
+});
 
 //jQuery effects - hide and show quiz//
 $('#btn-quiz').click(function(){
   $('.quiz').show();
   $('.text-black').hide();
   $('.card-deck').hide();
-})
+});
 
 $('#submit').click(function(){
   $('.quiz').hide();
   $('.text-black').show();
   $('.card-deck').show();
-})
+});
 
-//jQuery effects - hide and show image-of-the-day
+//jQuery effects - hide and show image-of-the-day//
 $('#display-image').click(function(){
-  $('.image-of-the-day').show();
+  $('#image-of-the-day').show();
+  $('#img-title').show();
   $('.text-black').hide();
   $('#img-card').hide();
   $('#videos').hide();
   $('#facts').hide();
-})
+});
+
+//jQuery effects - hide and show fact-of-the-day//
+$('#display-facts').click(function(){
+  $('#image-facts').show();
+  $('.text-black').hide();
+  $('#img-card').hide();
+  $('#videos').hide();
+  $('#facts').hide();
+});
 
 //HTML elements selected//
 var firstNameInput = document.querySelector("#firstName");
@@ -195,8 +205,11 @@ function displayFacts4() {
       
       const data4 = $('<h2>').text('1971-04-20');
       const image4 = $('<img>').attr('src', response.collection.items[3].href);
+
       const fact4 = $('<p>').text("Astronaut John W. Young, commander of the Apollo 16 lunar landing mission, leaps from the lunar surface as he salutes the United States flag at the Descartes landing site during the first Apollo 16 extravehicular activity (EVA). Astronaut Charles M. Duke Jr., lunar module pilot, took this picture. The Lunar Module (LM) 'Orion' is on the left. The Lunar Roving Vehicle (LRV) is parked beside the LM. The object behind Young (in the shade of the LM) is the Far Ultraviolet Camera/Spectrograph (FUC/S). Stone Mountain dominates the background in this lunar scene. While astronauts Young and Duke descended in the LM to explore the Descartes highlands landing site on the moon, astronaut Thomas K. Mattingly II, command module pilot, remained with the Command and Service Modules (CSM) 'Casper' in lunar orbit.");
       factsCtn.append(data4, image4, fact4);
+      const data4 = $('<h2>').text('1971-04-20');
+      factsCtn.append(image4,fact4,data4);
   })
 }
 
