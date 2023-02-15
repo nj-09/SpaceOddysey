@@ -234,15 +234,37 @@ function displayFacts6() {
   })
 }
 
+  // SpaceX missions
+
+function displayMissions() {
+  let queryURL = `https://api.spacexdata.com/v3/missions`
+  $.ajax({
+      url: queryURL,
+      method: "GET"
+  }).then(function (response) {
+      
+      const spaceXtitle = $('<h2>').text("SpaceX missions:")
+      factsCtn.append(spaceXtitle);
+
+      for (let i = 0; i < response.length; i++) {
+          const mission = $('<h3>').append(response[i].mission_name)
+          const description = $('<p>').append(response[i].description)
+          factsCtn.append(mission, description)
+      }
+  })
+}
 
 $('#display-facts').on('click', function (event) {
     event.preventDefault();
-  
     displayFacts1();
     displayFacts2();
     displayFacts3();
     displayFacts4();
     displayFacts5();
     displayFacts6();
+    
+    const nasaTitle = $('<h3>').text("NASA interesting facts and related image:")
+    factsCtn.append(nasaTitle);
+    displayMissions();
   })
   
