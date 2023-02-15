@@ -178,12 +178,12 @@ body {
     }
 
     .text-black{
-        margin: 0px 15px 20px 15px;
+        margin: 0px 20px 20px 20px;
         background-color: black;
     }
 
     .card-deck{
-        margin: 0px 0px 30px 0px;
+        margin: 0px 5px 30px 5px;
     }
 
     .card{
