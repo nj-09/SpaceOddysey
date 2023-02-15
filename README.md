@@ -1,7 +1,5 @@
 # SpaceOddysey
 
-![Screenshot of space app](./assets/Images/Capture56.PNG)
-
 ## Description:
 SpaceOddysey is a simple and interactive app designed for space enthusiasts that want to discover more about space in a fun and engaging way, while avoiding information overload. The app contains various features including quizzes, images, videos and more!
 
