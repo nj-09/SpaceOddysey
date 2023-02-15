@@ -34,7 +34,6 @@ body {
     color:white;
 }
 
-
 /*login and registration form design*/
     .form-box{
         border-radius: 30px;
@@ -178,23 +177,6 @@ body {
         color:white;
     }
 
-    .bd-example{
-        margin: 0px 5px 150px 5px;
-    }
-
-    .carousel-inner{
-        border-radius: 20px;
-    }
-
-    .carousel-item img{
-        width: 700px;
-    }
-
-    .carousel-item p{
-        font-size:larger
-
-    }
-
     .text-black{
         margin: 0px 15px 20px 15px;
         background-color: black;
@@ -215,14 +197,14 @@ body {
 
 /*button animation*/
     .btn-primary{
-        background: black;
+        background: rgba(4, 4, 66, 0.397);
         box-shadow: inset 0 0 0 0;
         transition: ease-out 0.5s;
-        outline: none;
+        outline-color: none;
     }
 
     .btn-primary:hover{
-        box-shadow: inset 100px 0 0 0 black;
+        box-shadow: inset 100px 0 0 0 rgb(64, 108, 134);
     }
 
     .footer{
